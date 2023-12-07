@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encurtador De URL</title>
+    <link rel="shortcut icon" href="images/icons8-hacker-50.png" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,500&family=Poppins:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="box">
+        <h2 class="title">Encurtador De URL</h2>
+        <form onsubmit="encurtarUrl(); return false;">
+            <div class="box-input">
+                <label for="input-url">URL:</label>
+                <input class="url" id="input-url" type="url" placeholder="Coloque aqui a URL" required>
+                <button class="btn" type="submit">Encurtar</button>
+                <button class="btn" type="button" onclick="copiar()">Copiar</button>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
